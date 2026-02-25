@@ -15,7 +15,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  res.render()
+  const randomAdj= adj[Math.floor(Math.random()*adj.length)];
+  const randomNoun= noun[Math.floor(Math.random()*noun.length)];
+  
   
 });
 
@@ -32,11 +34,17 @@ const adj = [
   "arid",
   "aromatic",
   "artistic",
+  "great",
+  "sweet",
+  "zesty",
  
 ];
 
 const noun = [
   "aardvark",
+  "anna",
+  "yuna",
+
   
   "dust",
   
